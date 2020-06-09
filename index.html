@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TP Módulo 01 - IGTI Full Stack</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="https://kit.fontawesome.com/d03fcf76e8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    </head>
+    <body>
+        <div id="particles-js" class="background"></div>
+        <header>
+            <h1>Search Users</h1>
+            <hr />
+        </header>
+        <section>
+            <form>
+                <input type="text" name="txtFind" id="txtFind" />
+                <span id="btnSearch" class="btnSearch" disabled><i class="fas fa-search"></i></span>
+                <!-- <input type="button" value="Buscar" name="btnFind" id="btnFind" disabled /> -->
+            </form>
+            <article>
+                <h2><span id="countFoundUsers"></span></h2>
+                <div id="tabFoundUsers"></div>
+            </article>
+            <aside>
+                <h2 id="titleStatistics">Estatísticas</h2>
+                <div id="statistics">
+                    <p>Sexo Masculino: <span id="countMen"></span></p>
+                    <p>Sexo Feminino: <span id="countWomen"></span></p>
+                    <p>Soma das idades: <span id="sumAges"></span></p>
+                    <p>Média das idades: <span id="averageAges"></span></p>
+                </div>
+            </aside>
+        </section>
+        <footer>Desenvolvido com <i class="fas fa-heart love"></i> por <span id="devName">Rafael Luis</span></footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
